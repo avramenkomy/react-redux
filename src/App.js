@@ -8,15 +8,18 @@ function App() {
     <div className="container pt-3">
       <div className="row">
           <div className="col">
+              <h4>Заголовок поста</h4>
               <PostForm />
           </div>
       </div>
       <div className="row">
           <div className="col">
-              <Posts />
+              <h4>Синхронные посты</h4>
+              <Posts posts={[1,2,3]}/>
           </div>
           <div className="col">
-              <FetchedPosts />
+              <h4>Асинхронные посты</h4>
+              <FetchedPosts posts={[]} />
           </div>
       </div>
     </div>
