@@ -8,7 +8,6 @@ function App() {
     <div className="container pt-3">
       <div className="row">
           <div className="col">
-              <h4>Заголовок поста</h4>
               <PostForm />
           </div>
       </div>
