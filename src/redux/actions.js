@@ -50,6 +50,5 @@ export function fetchPosts() {
       dispatch(showAlert(`Что-то пошло не так: ${e}`));
       dispatch(hideLoader());
     }
-
   }
 }
