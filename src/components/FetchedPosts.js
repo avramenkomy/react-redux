@@ -6,7 +6,16 @@ import {fetchPosts} from "../redux/actions";
 export default () => {
   const dispatch = useDispatch();
   const posts = useSelector(state => state.posts.fetchedPosts);
-  
+  const loading = useSelector(state => state.app.loading);
+
+  if (loading) {
+    return (
+      <div className="spinner-border text-warning" role="status">
+        <span className="sr-only" />
+      </div>
+    )
+  }
+
   if (!posts.length) {
     return (
       <button
